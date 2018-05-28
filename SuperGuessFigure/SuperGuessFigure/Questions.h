@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface Questions : NSObject
+@property(nonatomic,strong)NSArray *questions;
 @property(copy,nonatomic)NSString* answer;
 @property(copy,nonatomic)NSString* title;
 @property(copy,nonatomic)NSString* icon;
 @property(strong,nonatomic)NSArray* options;
 -(instancetype)initWithDict:(NSDictionary*)dict;
 +(instancetype)questionWithDict:(NSDictionary*)dict;
-+(NSArray*)questions;
+//+(NSArray*)questions;
 -(void)randomOptions;
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624C029D20BAC7CF00EEA5A5 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 624C029C20BAC7CF00EEA5A5 /* AboutViewController.xib */; };
+		624C02A020BAC7DF00EEA5A5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C029F20BAC7DF00EEA5A5 /* AboutViewController.m */; };
 		CF3FCB601CB35ADB0056F6F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB5F1CB35ADB0056F6F7 /* main.m */; };
 		CF3FCB631CB35ADB0056F6F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB621CB35ADB0056F6F7 /* AppDelegate.m */; };
 		CF3FCB661CB35ADB0056F6F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB651CB35ADB0056F6F7 /* ViewController.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		624C029C20BAC7CF00EEA5A5 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		624C029E20BAC7DE00EEA5A5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		624C029F20BAC7DF00EEA5A5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		CF3FCB5B1CB35ADB0056F6F7 /* SuperGuessFigure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperGuessFigure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3FCB5F1CB35ADB0056F6F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF3FCB611CB35ADB0056F6F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +93,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624C029820BA8A8400EEA5A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				624C029C20BAC7CF00EEA5A5 /* AboutViewController.xib */,
+				CF3FCB6A1CB35ADB0056F6F7 /* SuperGuessFigure.xcdatamodeld */,
+				CF3FCB961CB375B80056F6F7 /* Questions.h */,
+				CF3FCB971CB375B80056F6F7 /* Questions.m */,
+				CF3FCB941CB35BA40056F6F7 /* questions.plist */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		624C029920BA8A8A00EEA5A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				624C029E20BAC7DE00EEA5A5 /* AboutViewController.h */,
+				624C029F20BAC7DF00EEA5A5 /* AboutViewController.m */,
+				CF3FCB641CB35ADB0056F6F7 /* ViewController.h */,
+				CF3FCB651CB35ADB0056F6F7 /* ViewController.m */,
+				CF3FCB991CB37BA50056F6F7 /* NSArray+Log.h */,
+				CF3FCB9A1CB37BA50056F6F7 /* NSArray+Log.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		624C029A20BA8A9500EEA5A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF3FCB671CB35ADB0056F6F7 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		624C029B20BA8AA800EEA5A5 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				CF3FCB611CB35ADB0056F6F7 /* AppDelegate.h */,
+				CF3FCB621CB35ADB0056F6F7 /* AppDelegate.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		CF3FCB521CB35ADB0056F6F7 = {
 			isa = PBXGroup;
 			children = (
@@ -111,21 +158,11 @@
 		CF3FCB5D1CB35ADB0056F6F7 /* SuperGuessFigure */ = {
 			isa = PBXGroup;
 			children = (
-				CF3FCB991CB37BA50056F6F7 /* NSArray+Log.h */,
-				CF3FCB9A1CB37BA50056F6F7 /* NSArray+Log.m */,
-				CF3FCB611CB35ADB0056F6F7 /* AppDelegate.h */,
-				CF3FCB621CB35ADB0056F6F7 /* AppDelegate.m */,
-				CF3FCB641CB35ADB0056F6F7 /* ViewController.h */,
-				CF3FCB651CB35ADB0056F6F7 /* ViewController.m */,
-				CF3FCB671CB35ADB0056F6F7 /* Main.storyboard */,
-				CF3FCB6D1CB35ADB0056F6F7 /* Assets.xcassets */,
-				CF3FCB6F1CB35ADB0056F6F7 /* LaunchScreen.storyboard */,
-				CF3FCB721CB35ADB0056F6F7 /* Info.plist */,
-				CF3FCB6A1CB35ADB0056F6F7 /* SuperGuessFigure.xcdatamodeld */,
-				CF3FCB941CB35BA40056F6F7 /* questions.plist */,
+				624C029B20BA8AA800EEA5A5 /* Others */,
+				624C029A20BA8A9500EEA5A5 /* Views */,
+				624C029920BA8A8A00EEA5A5 /* Controllers */,
+				624C029820BA8A8400EEA5A5 /* Models */,
 				CF3FCB5E1CB35ADB0056F6F7 /* Supporting Files */,
-				CF3FCB961CB375B80056F6F7 /* Questions.h */,
-				CF3FCB971CB375B80056F6F7 /* Questions.m */,
 			);
 			path = SuperGuessFigure;
 			sourceTree = "<group>";
@@ -133,6 +170,9 @@
 		CF3FCB5E1CB35ADB0056F6F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF3FCB721CB35ADB0056F6F7 /* Info.plist */,
+				CF3FCB6F1CB35ADB0056F6F7 /* LaunchScreen.storyboard */,
+				CF3FCB6D1CB35ADB0056F6F7 /* Assets.xcassets */,
 				CF3FCB5F1CB35ADB0056F6F7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -266,6 +306,7 @@
 				CF3FCB711CB35ADB0056F6F7 /* LaunchScreen.storyboard in Resources */,
 				CF3FCB6E1CB35ADB0056F6F7 /* Assets.xcassets in Resources */,
 				CF3FCB691CB35ADB0056F6F7 /* Main.storyboard in Resources */,
+				624C029D20BAC7CF00EEA5A5 /* AboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +334,7 @@
 				CF3FCB661CB35ADB0056F6F7 /* ViewController.m in Sources */,
 				CF3FCB6C1CB35ADB0056F6F7 /* SuperGuessFigure.xcdatamodeld in Sources */,
 				CF3FCB981CB375B80056F6F7 /* Questions.m in Sources */,
+				624C02A020BAC7DF00EEA5A5 /* AboutViewController.m in Sources */,
 				CF3FCB9B1CB37BA50056F6F7 /* NSArray+Log.m in Sources */,
 				CF3FCB631CB35ADB0056F6F7 /* AppDelegate.m in Sources */,
 				CF3FCB601CB35ADB0056F6F7 /* main.m in Sources */,
